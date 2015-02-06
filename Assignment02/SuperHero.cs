@@ -8,13 +8,14 @@ namespace Assignment02
 {
     class SuperHero : Hero
     {
-       
 
-        private static string[] superPowers = {"SUPER SPEED", "SUPER STRENGTH", "BODY ARMOUR","FLIGHT","FIRE GENERATION", "WEATHER CONTROL"};
+
+        private static string[] superPowers = { "SUPER SPEED", "SUPER STRENGTH", "BODY ARMOUR", "FLIGHT", "FIRE GENERATION", "WEATHER CONTROL" };
         private string[] tempSuperPowers = new string[superPowers.Length];
         private string[] finalSuperPowers = new string[3];
 
-        public SuperHero (string name) : base (name)
+        public SuperHero(string name)
+            : base(name)
         {
             this.name = name;
             Random rnd = new Random();
@@ -31,6 +32,7 @@ namespace Assignment02
             while (index < finalSuperPowers.Length)
             {
                 rndSuperPower = generateRandomPowers(rnd, superPowers.Length);
+                
                 if (tempSuperPowers[rndSuperPower] != "taken")
                 {
 
@@ -40,16 +42,16 @@ namespace Assignment02
                 }
             }
 
-            
 
 
-        
-        
-            
-            
-            
+
+
+
+
+
+
         }
-        
+
         private int generateRandomPowers(Random rnd, int max)
         {
             int number;
@@ -59,12 +61,12 @@ namespace Assignment02
 
             number = rnd.Next(max);
             return number;
-             
-            
+
+
         }
         public void showPowers()
         {
-            Console.WriteLine("***********************************");
+            Console.WriteLine("******************************************");
             for (int index = 0; index < finalSuperPowers.Length; index++)
             {
                 if (index == 0)
@@ -72,17 +74,18 @@ namespace Assignment02
                     Console.WriteLine("{0}S' SUPER POWER # 1: {1}", this.name, finalSuperPowers[index]);
                 }
                 if (index == 1)
-                { 
-                Console.WriteLine("{0}S' SUPER POWER # 2: {1}", this.name, superPowers[1]);
+                {
+                    Console.WriteLine("{0}S' SUPER POWER # 2: {1}", this.name, finalSuperPowers[1]);
                 }
                 if (index == 2)
-                { 
-                Console.WriteLine("{0}S' SUPER POWER # 3: {1}", this.name, superPowers[2]);
+                {
+                    Console.WriteLine("{0}S' SUPER POWER # 3: {1}", this.name, finalSuperPowers[2]);
                 }
-                Console.WriteLine("***********************************");
+
             }
+            Console.WriteLine("*****************************************");
+
         }
-            
-    
     }
 }
+

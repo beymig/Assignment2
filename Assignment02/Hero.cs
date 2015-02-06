@@ -75,7 +75,7 @@ namespace Assignment02
                 }
                 if (this.name == "BATMAN")
                 {
-                    Console.WriteLine("------------------{0} COULDN'T HIT THE RIDDLER :( BUUUUU------------------", this.name);
+                    Console.WriteLine("--------------------{0} COULDN'T HIT THE RIDDLER :( BUUUUU------------------", this.name);
 
                 }
 
