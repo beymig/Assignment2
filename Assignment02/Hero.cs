@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    class Program
+    class Hero
     {
-        static void Main(string[] args)
-        {
-            
-        }
     }
 }
