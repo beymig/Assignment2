@@ -10,6 +10,14 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
+            Hero Batman = new Hero("BATMAN");
+            Batman.show();
+            Batman.fight();
+            Console.WriteLine("Press any key to continue");
+            Console.ReadKey();
+            SuperHero Superman = new SuperHero("SUPERMAN");
+            Superman.showPowers();
+            Superman.fight();
             
         }
     }
