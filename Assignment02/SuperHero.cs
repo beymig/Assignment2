@@ -52,24 +52,30 @@ namespace Assignment02
         
         private int generateRandomPowers(Random rnd, int max)
         {
-            
+            int number;
+
+
+
+
+            number = rnd.Next(max);
+            return number;
              
             
         }
         public void showPowers()
         {
             Console.WriteLine("***********************************");
-            for (int index = 0; index < superPowers.Length; index++)
+            for (int index = 0; index < finalSuperPowers.Length; index++)
             {
-                if (index == 1)
+                if (index == 0)
                 {
                     Console.WriteLine("{0}S' SUPER POWER # 1: {1}", this.name, finalSuperPowers[index]);
                 }
-                if (index == 2)
+                if (index == 1)
                 { 
                 Console.WriteLine("{0}S' SUPER POWER # 2: {1}", this.name, superPowers[1]);
                 }
-                if (index == 3)
+                if (index == 2)
                 { 
                 Console.WriteLine("{0}S' SUPER POWER # 3: {1}", this.name, superPowers[2]);
                 }
