@@ -21,7 +21,7 @@ namespace Assignment02
         //Public Properties
         public string name;
 
-        //Public Properties
+        
         //Constructor
         public Hero(string name)
         {
@@ -33,7 +33,7 @@ namespace Assignment02
 
 
 
-        //Receives value to determine if the villain will be hit by the hero
+        //Receives value to determine if the villain will be hit by the Hero and the SuperHero
         public void fight()
         {
             hitAttempt();

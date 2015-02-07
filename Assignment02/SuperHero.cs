@@ -10,10 +10,12 @@ namespace Assignment02
     {
 
 
+        //private properties
         private static string[] superPowers = { "SUPER SPEED", "SUPER STRENGTH", "BODY ARMOUR", "FLIGHT", "FIRE GENERATION", "WEATHER CONTROL" };
         private string[] tempSuperPowers = new string[superPowers.Length];
         private string[] finalSuperPowers = new string[3];
 
+        //constructor
         public SuperHero(string name)
             : base(name)
         {
@@ -21,12 +23,13 @@ namespace Assignment02
             Random rnd = new Random();
             int rndSuperPower;
 
-
+            //copy each element of the superPower array to tempSuperPowers array
             for (int superPower = 0; superPower < superPowers.Length; superPower++)
             {
                 tempSuperPowers[superPower] = superPowers[superPower];
             }
 
+            // Assign cells from one array to another ensuring no super power is going to be repeated
             int index = 0;
 
             while (index < finalSuperPowers.Length)
@@ -42,28 +45,20 @@ namespace Assignment02
                 }
             }
 
-
-
-
-
-
-
-
-
         }
 
+        //private method
+        //generates a random number to randomly select the super power
         private int generateRandomPowers(Random rnd, int max)
         {
             int number;
-
-
-
-
             number = rnd.Next(max);
             return number;
 
-
         }
+        
+        //public method
+        //shows the selected super powers
         public void showPowers()
         {
             Console.WriteLine("******************************************");
